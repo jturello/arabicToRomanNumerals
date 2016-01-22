@@ -39,5 +39,28 @@ var arabicToRoman = function(arabicNum){
     return romanNum = "D".concat("I");
   } else if (arabicNum === 1001) {
     return romanNum = "M".concat("I");
+  } else if ((1 < arabicNum) && (arabicNum <= 3)) {
+      //alert("in III");
+      romanNum = "I";
+      for (var i = 1; i < arabicNum; i++) {
+        romanNum = romanNum.concat("I");
+      }
+      return romanNum;
+  } else if ((5 < arabicNum) && (arabicNum <= 8)) {
+      //alert('got here VIII');
+      romanNum = "V";
+      for (var i = 6; i <= arabicNum; i++) {
+        romanNum = romanNum.concat("I");
+      }
+      return romanNum;
+  } else if ((10 < arabicNum) && (arabicNum <= 13)) {
+    romanNum = "X";
+    for (var i = 11; i <= arabicNum; i++) {
+      romanNum = romanNum.concat("I");
+    }
+    return romanNum;
   }
+
+
+
 };

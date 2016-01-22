@@ -31,30 +31,43 @@ describe('arabicToRoman', function(){
     expect(arabicToRoman(2)).to.equal("II");
   });
 
-  it("appends V to I to equal 2", function() {
+  it("appends I to V to equal 6", function() {
     expect(arabicToRoman(6)).to.equal("VI");
   });
 
-  it("appends X to I to equal 11", function() {
+  it("appends I to X to equal 11", function() {
     expect(arabicToRoman(11)).to.equal("XI");
   });
 
-  it("appends L to I to equal 51", function() {
+  it("appends I to L to equal 51", function() {
     expect(arabicToRoman(51)).to.equal("LI");
   });
 
-  it("appends C to I to equal 101", function() {
+  it("appends I to C to equal 101", function() {
     expect(arabicToRoman(101)).to.equal("CI");
   });
 
-  it("appends D to I to equal 501", function() {
+  it("appends I to D to equal 501", function() {
     expect(arabicToRoman(501)).to.equal("DI");
   });
 
-  it("appends M to I to equal 1001", function() {
+  it("appends I to M to equal 1001", function() {
     expect(arabicToRoman(1001)).to.equal("MI");
   });
 
+  it("appends 2 I's to I = III to equal 3", function() {
+    expect(arabicToRoman(3)).to.equal("III");
+  });
 
+  it("appends 3 I's to V = VIII to equal 8", function() {
+    expect(arabicToRoman(8)).to.equal("VIII");
+  });
+
+  it("appends 3 I's to X = XIII to equal 13", function() {
+    expect(arabicToRoman(13)).to.equal("XIII");
+  });
+
+
+  
 
 });
